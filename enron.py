@@ -23,7 +23,7 @@ def main():
         documents = tfidf.initialize_documents(all_emails, args.tf_idf)
         res = tfidf.calculate_top_search_results(documents, args.tf_idf)
 
-        output_dir = config.tf_idf_outpur_dir()
+        output_dir = config.tf_idf_output_dir()
 
         with open(output_dir + f'\\{args.tf_idf}.txt', 'w') as fp:
             for score, _, document in res:

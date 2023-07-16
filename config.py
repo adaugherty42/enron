@@ -7,5 +7,5 @@ def json_email_dir():
     return 'C:\\Users\\Adam\\Enron\\files'
 
 
-def tf_idf_outpur_dir():
+def tf_idf_output_dir():
     return 'C:\\Users\\Adam\\Enron\\tf_idf'
