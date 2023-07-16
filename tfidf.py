@@ -51,7 +51,7 @@ def initialize_documents(emails, search):
 def calculate_tfidf_score(document, search, inverse_document_frequencies):
     score = 0
     for term in search.split():
-        term_frequency = document.term_frequencies.get(term.lower())
+        term_frequency = document.term_frequencies.get(term.lower()) or 0
         inverse_document_frequency = inverse_document_frequencies.get(term.lower())
         score += term_frequency * inverse_document_frequency
     return score
